@@ -1,0 +1,10 @@
+.home {
+    background-color: rgb(66, 125, 124);
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    text-align: center;
+}
+#headline {
+    margin-top: 40vh;
+}
