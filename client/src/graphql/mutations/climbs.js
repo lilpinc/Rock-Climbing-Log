@@ -14,8 +14,8 @@ mutation addClimb($climbName: String!, $grade: String!, $location: String!, $dat
 `;
 
 export const UPDATE_CLIMB = gql`
-mutation updateClimb($climbName: String!, $grade: String!, $location: String!, $date: String!, $notes: String!) {
-    updateClimb(climbName: $climbName, grade: $grade, location: $location, date: $date, notes: $notes) {
+mutation updateClimb($id: ID!,$climbName: String!, $grade: String!, $location: String!, $date: String!, $notes: String!) {
+    updateClimb(_id: $id, climbName: $climbName, grade: $grade, location: $location, date: $date, notes: $notes) {
         _id
         climbName
         grade
@@ -27,7 +27,7 @@ mutation updateClimb($climbName: String!, $grade: String!, $location: String!, $
 `;
 
 export const DELETE_CLIMB = gql`
-mutation removeClimb($climbId: ID!) {
+mutation removeClimb($id: ID!) {
     removeClimb(_id: $id) {
         _id
         climbName

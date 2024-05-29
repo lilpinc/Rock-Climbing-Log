@@ -5,14 +5,14 @@ const resolvers = {
         climbs: async () => {
             return await Climbs.find({});
         },
-        climb: async (parent, { climbId }) => {
-            return await Climbs.findOne({ _id: climbId });
+        climb: async (parent, { _id }) => {
+            return await Climbs.findById( _id);
         },
         traininglogs: async () => {
             return await TrainingLog.find({});
         },
-        traininglog: async (parent, { traininglogId }) => {
-            return await TrainingLog.findOne({ _id: traininglogId });
+        traininglog: async (parent, { _id }) => {
+            return await TrainingLog.findById( _id);
         },
     },
 
@@ -23,9 +23,9 @@ const resolvers = {
         addTrainingLog: async (parent, { logName, date, notes }) => {
             return TrainingLog.create({ logName, date, notes });
         },
-        updateClimb: async (parent, { climbId, climbName, grade, location, date, notes }) => {
-            return await Climbs.findOneAndUpdate(
-                climbId,
+        updateClimb: async (parent, { _id, climbName, grade, location, date, notes }) => {
+            return await Climbs.findByIdAndUpdate(
+                _id,
                 {
                     $set:
                     {
@@ -39,9 +39,9 @@ const resolvers = {
                 { new: true }
             )
         },
-        updateTrainingLog: async (parent, { traininglogId, logName, date, notes }) => {
-            return await TrainingLog.findOneAndUpdate(
-                traininglogId,
+        updateTrainingLog: async (parent, { _id, logName, date, notes }) => {
+            return await TrainingLog.findByIdAndUpdate(
+                _id,
                 {
                     $set:
                     {
@@ -53,11 +53,11 @@ const resolvers = {
                 { new: true }
             )
         },
-        removeClimb: async (parent, { climbId }) => {
-            return await Climbs.findOneAndDelete({ climbId });
+        removeClimb: async (parent, { _id }) => {
+            return await Climbs.findByIdAndDelete(_id);
         },
-        removeTrainingLog: async (parent, { traininglogId }) => {
-            return await TrainingLog.findOneAndDelete({ traininglogId });
+        removeTrainingLog: async (parent, { _id }) => {
+            return await TrainingLog.findByIdAndDelete(_id);
         }
 
     }

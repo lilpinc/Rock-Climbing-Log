@@ -1,20 +1,28 @@
 .navbar {
-    height: 10vh;
+    height: 20vh;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
     padding: 10px;
+    background-color: rgb(53, 54, 54);
 }
 .nav-item {
     list-style-type: none;
-    margin: 0px 10px 0px 0px;
+    margin: 25px 10px 0px 0px;
     padding: 0 20px 0 0;
     font-weight: normal;
     font-size: 18px;
     float: right;
     display: inline-flex;
+   
 }
 #navigation{
     text-decoration: none; 
+    color: rgb(255, 255, 255);
+}
+#logo {
+    width: 145px;
+    border: solid black 1px;
+    border-radius: 50%;
+    
 }

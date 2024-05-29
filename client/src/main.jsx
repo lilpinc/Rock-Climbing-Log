@@ -1,9 +1,12 @@
 import ReactDOM from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom/dist'
 
-import Home from './components/Home Page/Home'
-import App from './App.jsx'
-import './index.css'
+import Home from './components/Home Page/Home';
+import App from './App.jsx';
+import './index.css';
+import MyClimbs from './pages/myClimbs';
+import SingleClimb from './pages/singleClimb';
+import AddClimb from './pages/addClimb'
 
 
 const router = createBrowserRouter([
@@ -15,6 +18,18 @@ const router = createBrowserRouter([
       {
         index: true,
         element: <Home />,
+      },
+      {
+        path:'/MyClimbs',
+        element: <MyClimbs />
+      },
+      {
+        path: '/Climb/:climbId',
+        element: <SingleClimb />,
+      },
+      {
+        path:'/AddClimb',
+        element: <AddClimb />
       },
     ]
   }

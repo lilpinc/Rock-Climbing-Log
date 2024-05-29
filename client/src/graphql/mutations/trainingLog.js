@@ -12,8 +12,8 @@ mutation addTrainingLog($logName: String!, $date: String!, $notes: String!) {
 `;
 
 export const UPDATE_TRAININGLOG = gql`
-mutation updateTrainingLog($traininglogId: ID!, $logName: String!, $date: String!, $notes: String!) {
-    updateTrainingLog(_id: $trainiglogId, logName: $logName, date: $date, notes: $notes) {
+mutation updateTrainingLog($id: ID!, $logName: String!, $date: String!, $notes: String!) {
+    updateTrainingLog(_id: $id, logName: $logName, date: $date, notes: $notes) {
         _id
         logName
         date
@@ -23,7 +23,7 @@ mutation updateTrainingLog($traininglogId: ID!, $logName: String!, $date: String
 `;
 
 export const DELETE_TRAININGLOG = gql`
-mutation removeTrainingLog($traininglogId: ID!) {
+mutation removeTrainingLog($id: ID!) {
     removeTrainingLog(_id: $id) {
       _id
       logName
