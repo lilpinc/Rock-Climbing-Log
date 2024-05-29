@@ -16,12 +16,11 @@ export default function UpdateClimbForm() {
     const [formState, setformState] = useState(
 
         {
-            id: climbData._id,
-            climbName: climbData.climbName,
-            grade: climbData.grade,
-            location: climbData.location,
-            date: climbData.date,
-            notes: climbData.notes,
+            climbName: climbData.climbName || '',
+            grade: climbData.grade || '',
+            location: climbData.location || '',
+            date: climbData.date || '',
+            notes: climbData.notes || ''
         }
 
     );
@@ -35,55 +34,72 @@ export default function UpdateClimbForm() {
 
     };
 
-    const handleFormSubmit = (event) => {
+    const handleFormSubmit = async (event) => {
         event.preventDefault();
-        updateClimb({
-            variables: { id: climbData._id, ...formState }
-        })
-        window.location.replace('/myClimbs')
-    }
+        try {
+            await updateClimb({
+                variables: { id: climbData._id, ...formState }
+            });
+            console.log("Climb updated successfully");
+            window.location.replace('/myClimbs');
+        } catch (error) {
+            console.error("Error updating climb:", error);
+        }
+    };
 
 
     return (
         <div className="add-new">
             <h2 className="card-header">Update Climb Entry</h2>
             <form onSubmit={handleFormSubmit}>
-                <label name="name">Climb Name:</label>
-                <input
-                    className="form-input"
-                    type="text"
-                    name="climbName"
-                    placeholder={climbData.climbName}
-                    value={formState.climbName}
-                    onChange={handleChange} />
-                <label name="beginDate">Grade:</label>
-                <input
-                    className="form-input"
-                    type="text"
-                    name="grade"
-                    placeholder={climbData.grade}
-                    value={formState.grade}
-                    onChange={handleChange} />
-                <label name="location">Location:</label>
-                <input type="text"
-                    className="form-input"
-                    name="location"
-                    placeholder={climbData.location}
-                    value={formState.location}
-                    onChange={handleChange} />
-                <label name="date">Date:</label>
-                <input type="text"
-                    className="form-input"
-                    name="date"
-                    placeholder={climbData.date}
-                    onChange={handleChange} />
-                <label name="notes">Notes:</label>
-                <input type="text"
-                    className="form-input"
-                    name="notes"
-                    placeholder={climbData.notes}
-                    onChange={handleChange} />
-                <button className="addbtn" type="submit">Submit Changes</button>
+                <div className="form-style">
+                    <label name="name">Climb Name:</label>
+                    <input
+                        className="form-input"
+                        type="text"
+                        name="climbName"
+                        placeholder={climbData.climbName}
+                        value={formState.climbName}
+                        onChange={handleChange} />
+                </div>
+                <div className="form-style">
+                    <label name="beginDate">Grade:</label>
+                    <input
+                        className="form-input"
+                        type="text"
+                        name="grade"
+                        placeholder={climbData.grade}
+                        value={formState.grade}
+                        onChange={handleChange} />
+                </div>
+                <div className="form-style">
+                    <label name="location">Location:</label>
+                    <input type="text"
+                        className="form-input"
+                        name="location"
+                        placeholder={climbData.location}
+                        value={formState.location}
+                        onChange={handleChange} />
+                </div>
+                <div className="form-style">
+                    <label name="date">Date:</label>
+                    <input type="text"
+                        className="form-input"
+                        name="date"
+                        placeholder={climbData.date}
+                        value={formState.date}
+                        onChange={handleChange} />
+                </div>
+                <div className="form-style">
+                    <label name="notes">Notes:</label>
+                    <input type="text"
+                        className="form-input notes2"
+                        name="notes"
+                        placeholder={climbData.notes}
+                        value={formState.notes}
+                        onChange={handleChange} />
+                </div>
+                <button className="formbtn" type="submit">Submit Changes</button>
             </form>
         </div>
     );

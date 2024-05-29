@@ -14,7 +14,7 @@ mutation addClimb($climbName: String!, $grade: String!, $location: String!, $dat
 `;
 
 export const UPDATE_CLIMB = gql`
-mutation updateClimb($id: ID!,$climbName: String!, $grade: String!, $location: String!, $date: String!, $notes: String!) {
+mutation updateClimb($id: ID!, $climbName: String!, $grade: String!, $location: String!, $date: String!, $notes: String!) {
     updateClimb(_id: $id, climbName: $climbName, grade: $grade, location: $location, date: $date, notes: $notes) {
         _id
         climbName

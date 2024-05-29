@@ -12,8 +12,8 @@ query trainingLogs {
 `;
 
 export const QUERY_TRAININGLOG = gql`
-query trainingLog($traininglogId: ID!) {
-    trainingLog(traininglogId: $traininglogId) {
+query trainingLog($id: ID!) {
+    trainingLog(_id: $id) {
         _id
         logName
         date

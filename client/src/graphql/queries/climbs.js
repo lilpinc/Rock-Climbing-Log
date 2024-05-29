@@ -14,8 +14,8 @@ query climbs {
 `;
 
 export const QUERY_CLIMB = gql`
-query climb($climbId: ID!) {
-    climb(climbId: $climbId) {
+query climb($id: ID!) {
+    climb(_id: $id) {
         _id
         climbName
         grade
