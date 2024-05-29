@@ -3,6 +3,7 @@ type Climbs {
     _id:ID
     climbName: String
     grade: String
+    climbType: String
     location: String
     date: String
     notes: String
@@ -23,11 +24,11 @@ type Query {
 }
 
 type Mutation{
-    addClimb (climbName: String!, grade: String!, location: String!, date: String!, notes: String!): Climbs
+    addClimb (climbName: String!, grade: String!, climbType: String!, location: String!, date: String!, notes: String!): Climbs
     addTrainingLog (logName: String!, date: String!, notes: String!): TrainingLog
     removeClimb (_id: ID!): Climbs
     removeTrainingLog (_id: ID!): TrainingLog
-    updateClimb (_id:ID!, climbName: String!, grade: String!, location: String!, date: String!, notes: String): Climbs
+    updateClimb (_id:ID!, climbName: String!, grade: String!, climbType: String!, location: String!, date: String!, notes: String): Climbs
     updateTrainingLog (_Id: ID!, logName: String!, date: String!, notes: String!): TrainingLog
 }
    

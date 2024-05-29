@@ -6,6 +6,7 @@ query climbs {
         _id
         climbName
         grade
+        climbType
         location
         date
         notes
@@ -19,6 +20,7 @@ query climb($id: ID!) {
         _id
         climbName
         grade
+        climbType
         location
         date
         notes

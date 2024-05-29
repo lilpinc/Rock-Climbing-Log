@@ -54,3 +54,10 @@ text-decoration: underline;
 .fa-trash-can:hover{
     transform: scale(1.1);
 }
+.fa-pen-to-square {
+    font-size:20px; 
+}
+
+.fa-pen-to-square:hover{
+    transform: scale(1.1);
+}

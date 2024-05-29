@@ -4,6 +4,7 @@ import { useQuery, useMutation } from "@apollo/client";
 import { QUERY_CLIMB } from "../../graphql/queries/climbs";
 import { UPDATE_CLIMB } from "../../graphql/mutations/climbs";
 import './updateClimbForm.css'
+import { Link } from 'react-router-dom';
 
 
 export default function UpdateClimbForm() {
@@ -18,6 +19,7 @@ export default function UpdateClimbForm() {
         {
             climbName: climbData.climbName || '',
             grade: climbData.grade || '',
+            climbType: climbData.climbType || '',
             location: climbData.location || '',
             date: climbData.date || '',
             notes: climbData.notes || ''
@@ -51,6 +53,9 @@ export default function UpdateClimbForm() {
     return (
         <div className="add-new">
             <h2 className="card-header">Update Climb Entry</h2>
+            <Link to="/myClimbs" >
+            <i className="fa-solid fa-arrow-left return"></i>
+            </Link>
             <form onSubmit={handleFormSubmit}>
                 <div className="form-style">
                     <label name="name">Climb Name:</label>
@@ -70,6 +75,16 @@ export default function UpdateClimbForm() {
                         name="grade"
                         placeholder={climbData.grade}
                         value={formState.grade}
+                        onChange={handleChange} />
+                </div>
+                <div className="form-style">
+                    <label name="name">Climb Type:</label>
+                    <input
+                        className="form-input"
+                        type="text"
+                        name="climbType"
+                        placeholder={climbData.climbType}
+                        value={formState.climbType}
                         onChange={handleChange} />
                 </div>
                 <div className="form-style">

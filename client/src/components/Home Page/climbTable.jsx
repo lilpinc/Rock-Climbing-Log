@@ -34,6 +34,7 @@ export default function ClimbTable({ climbs }) {
             <th></th>
             <th className="th titles">Climb Name:</th>
             <th className="th titles">Grade:</th>
+            <th className="th titles">Climb Type:</th>
             <th className="th titles">Location:</th>
             <th className="th titles">Date:</th>
             <th className="th titles notes">Comments:</th>
@@ -42,17 +43,16 @@ export default function ClimbTable({ climbs }) {
             climbs.map((climb) => (
               <tr key={climb._id}>
                 <td className="th">
-                  <button className="tablebtn">
                     <Link style={{ textDecoration: "none", color: "black" }}
                       className="btn btn-primary btn-block btn-squared"
                       to={`/Climb/${climb._id}`}
                     >
-                      Edit
+                     <i class="fa-solid fa-pen-to-square"></i>
                     </Link>
-                  </button>
                 </td>
                 <td className="th tdname">{climb.climbName}</td>
                 <td className="th td">{climb.grade}</td>
+                <td className="th td">{climb.climbType}</td>
                 <td className="th td"> {climb.location}</td>
                 <td className="th td">{climb.date}</td>
                 <td className="th td tdnote">{climb.notes}</td>

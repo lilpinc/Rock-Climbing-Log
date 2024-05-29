@@ -17,13 +17,13 @@ const resolvers = {
     },
 
     Mutation: {
-        addClimb: async (parent, { climbName, grade, location, date, notes }) => {
-            return Climbs.create({ climbName, grade, location, date, notes });
+        addClimb: async (parent, { climbName, grade, climbType, location, date, notes }) => {
+            return Climbs.create({ climbName, grade, climbType, location, date, notes });
         },
         addTrainingLog: async (parent, { logName, date, notes }) => {
             return TrainingLog.create({ logName, date, notes });
         },
-        updateClimb: async (parent, { _id, climbName, grade, location, date, notes }) => {
+        updateClimb: async (parent, { _id, climbName, grade, climbType, location, date, notes }) => {
             return await Climbs.findByIdAndUpdate(
                 _id,
                 {
@@ -31,6 +31,7 @@ const resolvers = {
                     {
                         climbName,
                         grade,
+                        climbType,
                         location,
                         date,
                         notes

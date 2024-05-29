@@ -11,6 +11,11 @@ const climbsSchema = new Schema(
             type: String,
             required: true,
         },
+        climbType:{
+            type: String,
+            required: true,
+        },
+
         location: {
             type: String,
             required: true,

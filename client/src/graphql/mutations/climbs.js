@@ -1,11 +1,12 @@
 import {gql} from '@apollo/client'
 
 export const ADD_CLIMB = gql`
-mutation addClimb($climbName: String!, $grade: String!, $location: String!, $date: String!, $notes: String!) {
-    addClimb(climbName: $climbName, grade: $grade, location: $location, date: $date, notes: $notes) {
+mutation addClimb($climbName: String!, $grade: String!, $climbType: String!, $location: String!, $date: String!, $notes: String!) {
+    addClimb(climbName: $climbName, grade: $grade, climbType: $climbType, location: $location, date: $date, notes: $notes) {
         _id
         climbName
         grade
+        climbType
         location
         date
         notes
@@ -14,11 +15,12 @@ mutation addClimb($climbName: String!, $grade: String!, $location: String!, $dat
 `;
 
 export const UPDATE_CLIMB = gql`
-mutation updateClimb($id: ID!, $climbName: String!, $grade: String!, $location: String!, $date: String!, $notes: String!) {
-    updateClimb(_id: $id, climbName: $climbName, grade: $grade, location: $location, date: $date, notes: $notes) {
+mutation updateClimb($id: ID!, $climbName: String!, $grade: String!, $climbType: String!, $location: String!, $date: String!, $notes: String!) {
+    updateClimb(_id: $id, climbName: $climbName, grade: $grade, climbType: $climbType, location: $location, date: $date, notes: $notes) {
         _id
         climbName
         grade
+        climbType
         location
         date
         notes
@@ -32,6 +34,7 @@ mutation removeClimb($id: ID!) {
         _id
         climbName
         grade
+        climbType
         location
         date
         notes

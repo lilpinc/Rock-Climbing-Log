@@ -12,6 +12,7 @@ const AddClimb = (climb) => {
     const [formState, setFormState] = useState({
         climbName: '',
         grade: '',
+        climbType:'',
         location: '',
         date: '',
         notes: '',
@@ -35,6 +36,7 @@ const AddClimb = (climb) => {
         setFormState({
             climbName: '',
             grade: '',
+            climbType:'',
             location: '',
             date: '',
             notes: '',
@@ -70,6 +72,15 @@ const AddClimb = (climb) => {
                     name="grade"
                     type="text"
                     value={formState.grade}
+                    onChange={handleChange}
+                />
+                 <label name="climbType">Climb Type:</label>
+                <input
+                    className="form-input"
+                    placeholder="Climb Type"
+                    name="climbType"
+                    type="text"
+                    value={formState.climbType}
                     onChange={handleChange}
                 />
                 <label name="location">Location:</label>
