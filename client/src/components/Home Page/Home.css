@@ -12,8 +12,9 @@
 }
 .article{
     background-color: rgba(243, 254, 230, 0.5);
-    height: 100%;
+    height: 90%;
     display: flex;
+    margin-bottom: 0;
 }
 .header{
     margin-top: 20vh;
@@ -33,27 +34,58 @@
     height: 400px;
     margin-right: 20px;
 }
-#ropes{
-    position: absolute;
-    margin-left:-250px;
-    width: 300px;
-    height: 300px;
+.pictures2{
+    margin-top: 5vh;
+    margin-left: 20px;
+}
+.pics{
     border: solid rgb(44, 44, 44) 1px;
     border-radius: 10px;
+    object-fit: cover;
+}
+
+#ropes{
+    position: absolute;
+    width: 350px;
+    margin-left:-100px;
+    height: 350px;
 }
 #boulder{
     position: absolute;
-    margin-top: 120px;
+    margin-left:-250px;
+    margin-top: 140px;
     width: 250px;
     height: 250px;
-    border: solid rgb(44, 44, 44) 1px;
-    border-radius: 10px;
 }
+#lift{
+    position: absolute;
+    margin-top: 140px;
+    margin-left: 25px;
+    width: 250px;
+    height: 250px;
+}
+
+#cycle{
+    position: absolute;
+    margin-left:-250px;
+    width: 350px;
+    height: 350px;
+}
+
 .article-info{
     width: 55vw;
     margin-left: 40px;
 }
+
 .article-info2{
     width: 55vw;
-    margin-right: 40px;
+    margin-left: 40px;
 }
+.hidden {
+    opacity: 0;
+    transition: all 1.5s;
+}
+
+.show {
+    opacity: 1;
+  }

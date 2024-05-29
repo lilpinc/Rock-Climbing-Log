@@ -4,3 +4,6 @@ An app where you can log your outdoor sends and training sessions so you can tra
 
 
 sean benesh - unsplash - ropes
+mariah krafft - unsplash - lift
+coen van de broek - unsplash - cycle
+sam mogley - boulder

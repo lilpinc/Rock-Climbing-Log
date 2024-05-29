@@ -1,0 +1,26 @@
+.footer{
+    background-color: rgb(53, 54, 54);
+    padding: 3vh;
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+.sourcelinks{
+    padding: 10px;
+}
+.fa-brands{
+    font-size:30px;
+    color: white;
+}
+.fa-envelope{
+    font-size:30px;
+    color: white;
+}
+.fa-brands:hover{
+    transform: scale(1.1);
+  }
+.fa-envelope:hover{
+    transform: scale(1.1);
+  }
