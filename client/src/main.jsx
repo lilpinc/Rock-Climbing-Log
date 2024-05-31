@@ -7,6 +7,9 @@ import './index.css';
 import MyClimbs from './pages/myClimbs';
 import SingleClimb from './pages/singleClimb';
 import AddClimb from './pages/addClimb'
+import MyTraining from './pages/myTraining';
+import SingleTraining from  './pages/singleTraining';
+import AddTraining from './pages/addTraining'
 
 
 const router = createBrowserRouter([
@@ -30,6 +33,18 @@ const router = createBrowserRouter([
       {
         path:'/AddClimb',
         element: <AddClimb />
+      },
+      {
+        path:'/MyTraining',
+        element: <MyTraining />
+      },
+      {
+        path: '/Training/:trainingId',
+        element: <SingleTraining />,
+      },
+      {
+        path:'/AddTraining',
+        element: <AddTraining />
       },
     ]
   }

@@ -1,8 +1,8 @@
 const db = require('../config/connection');
 const { Climbs, TrainingLog } = require('../models');
 const cleanDB = require('./cleanDB');
-// const mongoose = require("mongoose");
-// const { ObjectId } = mongoose.Types;
+const mongoose = require("mongoose");
+const { ObjectId } = mongoose.Types;
 
 const climbsData = require('./ClimbsData.json');
 const trainingLogData = require('./TrainingLogData.json');

@@ -25,9 +25,9 @@ export default function Header() {
           <ul className="nav">
             <li className="nav-item">
               <Link
-                to="/MyTrainingLog" id="navigation"
+                to="/MyTraining" id="navigation"
                 // Check to see if the currentPage is `Blog`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
-                className={currentPage === '/MyTrainingLog' ? 'nav-link active text-white' : 'nav-link text-white'}
+                className={currentPage === '/MyTraining' ? 'nav-link active text-white' : 'nav-link text-white'}
               >
                 Training Log
               </Link>

@@ -2,7 +2,7 @@ import {gql} from '@apollo/client'
 
 export const ADD_TRAININGLOG = gql`
 mutation addTrainingLog($logName: String!, $date: String!, $notes: String!) {
-    addProgram(logName: $logName, date: $date, notes: $notes) {
+    addTrainingLog(logName: $logName, date: $date, notes: $notes) {
         _id
         logName
         date

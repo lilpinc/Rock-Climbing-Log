@@ -32,7 +32,8 @@ export default function Home() {
       <article className="article">
         <div className="article-info">
           <h2 id="catch1" ref={(el) => hiddenElementsRef.current.push(el)} className="hidden"> Log Your Outdoor Climbing Sends</h2>
-          <p ref={(el) => hiddenElementsRef.current.push(el)} className="hidden"> Keep a record of your climbing accomplishments to track your progress and keep tabs on the climbs you've topped!</p>
+          <p ref={(el) => hiddenElementsRef.current.push(el)} className="hidden"> Keep a record of your climbing accomplishments to track your progress and remember all the cool routes you've sent! Trad, lead, top-rope, bouldering, you name it. Just don't forget to leave a good comment to look back at later for when you want to resend something or realize just how much time you've spent going outside to feel up rocks. No judgement, we all are right there with you. You also have the option to update or delete a climb from your log if you don't like the climb anymore or, you know...unsend ;P</p>
+          <button className='startbtn'>Add a Climb</button>
         </div>
         <div className='pictures hidden' ref={(el) => hiddenElementsRef.current.push(el)}>
           <img src="/pictures/ropes.jpg" alt="ropes" id="ropes" className='pics'/>
@@ -46,7 +47,8 @@ export default function Home() {
         </div>
         <div className="article-info2">
           <h2 id="catch2" ref={(el) => hiddenElementsRef.current.push(el)} className="hidden"> Track Your Fitness Training Progress</h2>
-          <p ref={(el) => hiddenElementsRef.current.push(el)} className="hidden"> Record your daily workouts i.e. running, lifting, swimming, climbing, cycling, etc. </p>
+          <p ref={(el) => hiddenElementsRef.current.push(el)} className="hidden"> I know we all want to climb 24/7 but sometimes thats just not realistic. Might as well do some other activities in the meantime! Record your daily workouts i.e. running, lifting, swimming, climbing, cycling, etc. Yes, I know its not as cool as climbing but hey, it's only going to make you more fit and ready to send hard things later. Record all your workouts so you can keep track of your training and see improvements in your fitness off the wall! Remember to leave comments on how movements felt, what weight you lifted, how fast you went, and don't forget HR during, after, and at rest to monitor recovery.</p>
+          <button className='startbtn'>Add a Training Session</button>
         </div>
       </article>
     </ div>

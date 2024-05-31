@@ -18,9 +18,9 @@ type TrainingLog {
 
 type Query {
     climbs: [Climbs]!
-    traininglogs: [TrainingLog]!
+    trainingLogs: [TrainingLog]!
     climb(_id: ID!) : Climbs
-    traininglog(_id: ID!): TrainingLog
+    trainingLog(_id: ID!): TrainingLog
 }
 
 type Mutation{
@@ -29,7 +29,7 @@ type Mutation{
     removeClimb (_id: ID!): Climbs
     removeTrainingLog (_id: ID!): TrainingLog
     updateClimb (_id:ID!, climbName: String!, grade: String!, climbType: String!, location: String!, date: String!, notes: String): Climbs
-    updateTrainingLog (_Id: ID!, logName: String!, date: String!, notes: String!): TrainingLog
+    updateTrainingLog (_id: ID!, logName: String!, date: String!, notes: String!): TrainingLog
 }
    
 `

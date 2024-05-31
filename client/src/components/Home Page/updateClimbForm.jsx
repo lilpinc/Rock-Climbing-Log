@@ -68,7 +68,7 @@ export default function UpdateClimbForm() {
                         onChange={handleChange} />
                 </div>
                 <div className="form-style">
-                    <label name="beginDate">Grade:</label>
+                    <label name="grade">Grade:</label>
                     <input
                         className="form-input"
                         type="text"
@@ -78,7 +78,7 @@ export default function UpdateClimbForm() {
                         onChange={handleChange} />
                 </div>
                 <div className="form-style">
-                    <label name="name">Climb Type:</label>
+                    <label name="climbType">Climb Type:</label>
                     <input
                         className="form-input"
                         type="text"

@@ -8,10 +8,10 @@ const resolvers = {
         climb: async (parent, { _id }) => {
             return await Climbs.findById( _id);
         },
-        traininglogs: async () => {
+        trainingLogs: async () => {
             return await TrainingLog.find({});
         },
-        traininglog: async (parent, { _id }) => {
+        trainingLog: async (parent, { _id }) => {
             return await TrainingLog.findById( _id);
         },
     },

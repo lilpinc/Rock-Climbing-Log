@@ -47,7 +47,7 @@ export default function ClimbTable({ climbs }) {
                       className="btn btn-primary btn-block btn-squared"
                       to={`/Climb/${climb._id}`}
                     >
-                     <i class="fa-solid fa-pen-to-square"></i>
+                     <i className="fa-solid fa-pen-to-square"></i>
                     </Link>
                 </td>
                 <td className="th tdname">{climb.climbName}</td>

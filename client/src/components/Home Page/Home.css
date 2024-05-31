@@ -73,13 +73,15 @@
 }
 
 .article-info{
-    width: 55vw;
+    width: 45vw;
     margin-left: 40px;
+    margin-right: 40px;
 }
 
 .article-info2{
-    width: 55vw;
+    width: 45vw;
     margin-left: 40px;
+    margin-right: 40px;
 }
 .hidden {
     opacity: 0;
@@ -88,4 +90,11 @@
 
 .show {
     opacity: 1;
+  }
+
+  .startbtn{
+    background-color: rgba(228, 255, 195, 0.8);
+    padding: 5px;
+    margin-top: 80px;
+    border-radius: 5px;
   }
