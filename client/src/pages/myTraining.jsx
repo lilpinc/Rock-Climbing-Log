@@ -1,17 +1,18 @@
-import './myTraining.css';
+
 import TrainingTable from "../components/Home Page/trainingTable";
 import { useQuery } from "@apollo/client";
 import { QUERY_TRAININGLOGS } from "../graphql/queries/trainingLog";
-// import { Navigate } from 'react-router-dom';
-// import Auth from '../utils/auth'
+import { Navigate } from 'react-router-dom';
+import Auth from '../utils/auth'
 import { Link } from 'react-router-dom';
 
 
 export default function myTraining() {
 
-    // if (!Auth.loggedIn()) {
-    //     return <Navigate to="/" />;
-    // }
+    if (!Auth.loggedIn()) {
+        alert("Must be logged in to add a training session");
+        return <Navigate to="/" />;
+    }
     const { loading, data } = useQuery(QUERY_TRAININGLOGS);
     const trainingData = data?.trainingLogs || [];
 

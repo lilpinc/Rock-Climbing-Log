@@ -4,29 +4,35 @@
     height: 100vh;
     text-align: center;
     background-color: rgb(53, 54, 54);
-    color:white;
+    color: white;
 }
+
 #headline {
-   margin-bottom:20px;
-   font-size: 40px;
+    margin-bottom: 20px;
+    font-size: 40px;
 }
-.article{
+
+.article {
     background-color: rgba(243, 254, 230, 0.5);
     height: 90%;
     display: flex;
     margin-bottom: 0;
 }
-.header{
+
+.header {
     margin-top: 20vh;
     margin-bottom: 40vh;
 }
-#catch1{
+
+#catch1 {
     margin: 10vh 0vw;
 }
-#catch2{
+
+#catch2 {
     margin-bottom: 10vh;
 }
-.pictures{
+
+.pictures {
     position: relative;
     margin-top: 15vh;
     width: 45vw;
@@ -34,30 +40,34 @@
     height: 400px;
     margin-right: 20px;
 }
-.pictures2{
+
+.pictures2 {
     margin-top: 5vh;
     margin-left: 20px;
 }
-.pics{
+
+.pics {
     border: solid rgb(44, 44, 44) 1px;
     border-radius: 10px;
     object-fit: cover;
 }
 
-#ropes{
+#ropes {
     position: absolute;
     width: 350px;
-    margin-left:-100px;
+    margin-left: -100px;
     height: 350px;
 }
-#boulder{
+
+#boulder {
     position: absolute;
-    margin-left:-250px;
+    margin-left: -250px;
     margin-top: 140px;
     width: 250px;
     height: 250px;
 }
-#lift{
+
+#lift {
     position: absolute;
     margin-top: 140px;
     margin-left: 25px;
@@ -65,24 +75,25 @@
     height: 250px;
 }
 
-#cycle{
+#cycle {
     position: absolute;
-    margin-left:-250px;
+    margin-left: -250px;
     width: 350px;
     height: 350px;
 }
 
-.article-info{
+.article-info {
     width: 45vw;
     margin-left: 40px;
     margin-right: 40px;
 }
 
-.article-info2{
+.article-info2 {
     width: 45vw;
     margin-left: 40px;
     margin-right: 40px;
 }
+
 .hidden {
     opacity: 0;
     transition: all 1.5s;
@@ -90,11 +101,19 @@
 
 .show {
     opacity: 1;
-  }
+}
 
-  .startbtn{
+.startbtn {
     background-color: rgba(228, 255, 195, 0.8);
     padding: 5px;
     margin-top: 80px;
     border-radius: 5px;
-  }
+}
+.startbtn:hover {
+    transform: scale(1.1);
+    transition: .1s;
+}
+#add{
+    color: black;
+    text-decoration: none;
+}

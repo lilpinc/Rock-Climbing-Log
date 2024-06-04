@@ -4,6 +4,8 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom/dist'
 import Home from './components/Home Page/Home';
 import App from './App.jsx';
 import './index.css';
+import Login from './pages/login';
+import Signup from './pages/signup';
 import MyClimbs from './pages/myClimbs';
 import SingleClimb from './pages/singleClimb';
 import AddClimb from './pages/addClimb'
@@ -21,6 +23,14 @@ const router = createBrowserRouter([
       {
         index: true,
         element: <Home />,
+      },
+      {
+        path: '/Signup',
+        element: <Signup />
+      },
+      {
+        path: '/Login',
+        element: <Login />
       },
       {
         path:'/MyClimbs',

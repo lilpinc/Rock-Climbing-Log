@@ -2,16 +2,17 @@ import './myClimbs.css'
 import ClimbTable from "../components/Home Page/climbTable";
 import { useQuery } from "@apollo/client";
 import { QUERY_CLIMBS } from "../graphql/queries/climbs";
-// import { Navigate } from 'react-router-dom';
-// import Auth from '../utils/auth'
+import { Navigate } from 'react-router-dom';
+import Auth from '../utils/auth'
 import { Link } from 'react-router-dom';
 
 
 export default function myClimbs() {
 
-    // if (!Auth.loggedIn()) {
-    //     return <Navigate to="/" />;
-    // }
+    if (!Auth.loggedIn()) {
+        alert("Must be logged in to add a climb");
+        return <Navigate to="/" />;
+    }
     const { loading, data } = useQuery(QUERY_CLIMBS);
     const climbsData = data?.climbs || [];
 

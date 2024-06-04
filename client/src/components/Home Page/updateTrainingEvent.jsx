@@ -3,7 +3,6 @@ import { useParams } from "react-router-dom";
 import { useQuery, useMutation } from "@apollo/client";
 import { QUERY_TRAININGLOG } from "../../graphql/queries/trainingLog";
 import { UPDATE_TRAININGLOG } from "../../graphql/mutations/trainingLog";
-import './updateTrainingEvent.css'
 import { Link } from 'react-router-dom';
 
 

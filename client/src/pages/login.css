@@ -1,0 +1,27 @@
+.login-main{
+text-align: center;
+background-color: rgb(53, 54, 54);
+color: white;
+height: 100vh;
+}
+.login-title{
+    margin: 40px;
+}
+.login-form{
+    margin-top: 20px;
+}
+.login-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form-input1{
+    display: flex;
+    margin-top: 20px;
+    padding: 8px;
+    flex-direction: row;
+    width: 200px;
+}
+.create-btn{
+    margin-top: 20px;
+}

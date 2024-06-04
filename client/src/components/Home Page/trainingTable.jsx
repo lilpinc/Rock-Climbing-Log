@@ -2,7 +2,7 @@ import { Link, useLocation } from "react-router-dom";
 import { DELETE_TRAININGLOG} from "../../graphql/mutations/trainingLog";
 import { QUERY_TRAININGLOG } from "../../graphql/queries/trainingLog";
 import { useMutation } from "@apollo/client";
-import './trainingTable.css'
+
 
 export default function TrainingTable({ trainingLogs }) {
 
