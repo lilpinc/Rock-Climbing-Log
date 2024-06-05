@@ -17,7 +17,7 @@ type TrainingLog {
 }
 
 type User{
-    _id: ID
+    _id:ID
     username: String
     password: String
     email: String
@@ -35,7 +35,7 @@ type Query {
     climb(_id: ID!) : Climbs
     trainingLog(_id: ID!): TrainingLog
     users: [User]!
-    user(username: String!): User
+    user(_id: ID!): User
 }
 
 type Mutation{

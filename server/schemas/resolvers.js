@@ -19,8 +19,8 @@ const resolvers = {
         users: async () => {
             return await User.find({})
         },
-        user: async (parent, { username}) => {
-            return User.findOne({username});
+        user: async (parent, {_id}) => {
+            return await User.findById(_id);
         },
     },
 
@@ -71,7 +71,7 @@ const resolvers = {
             )
         },
         updateUser: async (parent, { _id, username, password, email }) => {
-            return User.findByIdAndUpdate(
+            return await User.findByIdAndUpdate(
                 _id,
                 {
                     $set:
@@ -91,7 +91,7 @@ const resolvers = {
             return await TrainingLog.findByIdAndDelete(_id);
         },
         removeUser: async (parent, { _id }) => {
-            return User.findByIdAndDelete(_id);
+            return await User.findByIdAndDelete(_id);
         },
         login: async (parent, { email, password }) => {
             const user = await User.findOne({ email });

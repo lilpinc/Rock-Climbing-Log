@@ -11,8 +11,8 @@ mutation addUser($username: String!, $password: String!, $email: String!) {
   }`;
 
 export const DELETE_USER = gql`
-mutation removeUser($username: String!) {
-    removeUser(username: $username) {
+mutation removeUser($id: ID!) {
+    removeUser(_id: $id) {
       _id
       username
       password
@@ -27,6 +27,8 @@ mutation login($email: String!, $password: String!) {
       user {
         _id
         username
+        email
+        password
       }
     }
   }`;
