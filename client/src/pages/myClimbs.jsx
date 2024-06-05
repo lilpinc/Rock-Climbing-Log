@@ -1,4 +1,4 @@
-import './myClimbs.css'
+import '/public/css/myClimbs.css'
 import ClimbTable from "../components/Home Page/climbTable";
 import { useQuery } from "@apollo/client";
 import { QUERY_CLIMBS } from "../graphql/queries/climbs";

@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import { useQuery, useMutation } from "@apollo/client";
 import { QUERY_CLIMB } from "../../graphql/queries/climbs";
 import { UPDATE_CLIMB } from "../../graphql/mutations/climbs";
-import './updateClimbForm.css'
+import '/public/css/updateClimbForm.css'
 import { Link } from 'react-router-dom';
 
 

@@ -1,5 +1,5 @@
 import { Link, useLocation } from 'react-router-dom';
-import './Header.css'
+import '/public/css/Header.css'
 import Auth from '../../utils/auth'
 
 

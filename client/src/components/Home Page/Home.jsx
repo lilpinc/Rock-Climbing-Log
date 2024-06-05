@@ -1,4 +1,4 @@
-import './Home.css'
+import '/public/css/Home.css'
 import { useEffect, useRef } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 

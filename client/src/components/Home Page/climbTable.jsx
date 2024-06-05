@@ -2,7 +2,7 @@ import { Link, useLocation } from "react-router-dom";
 import { DELETE_CLIMB} from "../../graphql/mutations/climbs";
 import { QUERY_CLIMB } from "../../graphql/queries/climbs";
 import { useMutation } from "@apollo/client";
-import './climbTable.css'
+import '/public/css/climbTable.css'
 
 export default function ClimbTable({ climbs }) {
 
