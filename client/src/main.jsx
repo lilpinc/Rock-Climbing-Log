@@ -14,6 +14,7 @@ import SingleTraining from  './pages/singleTraining';
 import AddTraining from './pages/addTraining'
 
 
+
 const router = createBrowserRouter([
   {
     path: '/',
