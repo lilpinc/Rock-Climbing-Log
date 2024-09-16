@@ -42,7 +42,7 @@ const Login = (props) => {
   };
 
   return (
-    <main className="login-main">
+    <main className="login-main backgroundlines">
       <div className="img">
         <div className="card">
           <h2 className="login-title">Login</h2>
@@ -70,6 +70,9 @@ const Login = (props) => {
                   value={formState.password}
                   onChange={handleChange}
                 />
+                <div className="forgot">
+                <Link to="/ForgotPassword" style={{color: "white", fontSize: "15px" }}>forgot password</Link>
+                </div>
                 <button
                   className="startbtn"
                   style={{ cursor: 'pointer' }}

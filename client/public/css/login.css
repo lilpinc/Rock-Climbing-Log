@@ -1,11 +1,13 @@
 .login-main{
 text-align: center;
-background-color: rgb(53, 54, 54);
+background-color: #353636;
+border-top: hsla(89, 100%, 88%, 0.8) solid 2px;
 color: white;
 height: 100vh;
 }
 .login-title{
     margin: 40px;
+    margin-top: 80px;
 }
 .login-form{
     margin-top: 20px;
@@ -24,4 +26,14 @@ height: 100vh;
 }
 .create-btn{
     margin-top: 20px;
+}
+.forgot{
+    padding-top: 20px;
+    text-decoration: underline;
+    color: white;
+    font-size: 18px;
+}
+.backgroundlines {
+    background: linear-gradient(50deg, hsl(0, 0%, 39%) 21%, #353636 21% 23%, hsl(0, 0%, 39%) 23% 26%, #353636 26% 95%,hsl(0, 0%, 39%) 95% 98%, #353636 98% 100%); 
+    padding-bottom: 10%;
 }

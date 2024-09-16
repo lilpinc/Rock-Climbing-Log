@@ -13,6 +13,7 @@ import AddClimb from './pages/addClimb'
 import MyTraining from './pages/myTraining';
 import SingleTraining from  './pages/singleTraining';
 import AddTraining from './pages/addTraining'
+import ForgotPassword from './pages/forgotPassword'
 
 
 
@@ -57,6 +58,10 @@ const router = createBrowserRouter([
       {
         path:'/AddTraining',
         element: <AddTraining />
+      },
+      {
+        path:'/ForgotPassword',
+        element: <ForgotPassword />
       },
     ]
   }

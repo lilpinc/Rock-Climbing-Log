@@ -50,7 +50,7 @@ const SignUp = (props) => {
     };
 
     return (
-        <main className="login-main">
+        <main className="login-main backgroundlines">
         <div className="img">
           <div className="card">
             <h2 className="login-title">Sign Up</h2>

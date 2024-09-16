@@ -30,6 +30,7 @@ export default function Home() {
         <h1 id="headline">Welcome to Daily Sends!</h1>
         <p>Where you can log your training workouts and climbing achievements!</p>
       </div>
+      <div className='articleinformation'>
       <article className="article">
         <div className="article-info">
           <h2 id="catch1" ref={(el) => hiddenElementsRef.current.push(el)} className="hidden"> Log Your Outdoor Climbing Sends</h2>
@@ -48,10 +49,11 @@ export default function Home() {
         </div>
         <div className="article-info2">
           <h2 id="catch2" ref={(el) => hiddenElementsRef.current.push(el)} className="hidden"> Track Your Fitness Training Progress</h2>
-          <p ref={(el) => hiddenElementsRef.current.push(el)} className="hidden"> I know we all want to climb 24/7 but sometimes thats just not realistic. Might as well do some other activities in the meantime! Record your daily workouts i.e. running, lifting, swimming, climbing, cycling, etc. Yes, I know its not as cool as climbing but hey, it's only going to make you more fit and ready to send hard things later. Record all your workouts so you can keep track of your training and see improvements in your fitness off the wall! Remember to leave comments on how movements felt, what weight you lifted, how fast you went, and don't forget HR during, after, and at rest to monitor recovery.</p>
+          <p ref={(el) => hiddenElementsRef.current.push(el)} className="hidden"> We all want to climb 24/7 but sometimes thats just not realistic. Might as well do some other activities in the meantime! Record your daily workouts i.e. running, lifting, swimming, climbing, cycling, etc. Yes, its not as cool as climbing but hey, it's only going to make you more fit and ready to send hard things later. Record all your workouts so you can keep track of your training and see improvements in your fitness off the wall! Remember to leave comments on how movements felt, what weight you lifted, how fast you went, and don't forget HR during, after, and at rest to monitor recovery.</p>
           <button ref={(el) => hiddenElementsRef.current.push(el)} className='hidden startbtn'><Link  to="/MyTraining" id="add">Add a Training Session</Link></button>
         </div>
       </article>
-    </ div>
+      </div>
+    </div>
   )
 }
