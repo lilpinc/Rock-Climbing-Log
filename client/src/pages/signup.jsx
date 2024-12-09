@@ -52,6 +52,7 @@ const SignUp = (props) => {
     return (
         <main className="login-main backgroundlines">
         <div className="img">
+        <Link to="/" className='back'><i class="fa-solid fa-arrow-left"></i></Link>
           <div className="card">
             <h2 className="login-title">Sign Up</h2>
             <div className="login-card">

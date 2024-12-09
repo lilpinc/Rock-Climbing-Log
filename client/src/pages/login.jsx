@@ -44,6 +44,7 @@ const Login = (props) => {
   return (
     <main className="login-main backgroundlines">
       <div className="img">
+          <Link to="/" className='back'><i class="fa-solid fa-arrow-left"></i></Link>
         <div className="card">
           <h2 className="login-title">Login</h2>
           <div className="login-card">
@@ -71,7 +72,7 @@ const Login = (props) => {
                   onChange={handleChange}
                 />
                 <div className="forgot">
-                <Link to="/ForgotPassword" style={{color: "white", fontSize: "15px" }}>forgot password</Link>
+                  <Link to="/ForgotPassword" style={{ color: "white", fontSize: "15px" }}>forgot password</Link>
                 </div>
                 <button
                   className="startbtn"
@@ -92,7 +93,7 @@ const Login = (props) => {
         </div>
       </div>
       <div>
-      <button className="startbtn create-btn" ><a className='alink' href="http://localhost:3000/Signup">Create an Account</a></button>
+        <button className="startbtn create-btn" ><a className='alink' href="http://localhost:3000/Signup">Create an Account</a></button>
       </div>
     </main>
   );

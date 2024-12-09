@@ -14,6 +14,7 @@ import MyTraining from './pages/myTraining';
 import SingleTraining from  './pages/singleTraining';
 import AddTraining from './pages/addTraining'
 import ForgotPassword from './pages/forgotPassword'
+import ResetPassword from './pages/resetPassword'
 
 
 
@@ -62,6 +63,10 @@ const router = createBrowserRouter([
       {
         path:'/ForgotPassword',
         element: <ForgotPassword />
+      },
+      {
+        path:'/ResetPassword',
+        element: <ResetPassword />
       },
     ]
   }

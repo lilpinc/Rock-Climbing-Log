@@ -28,6 +28,11 @@ type Auth{
     user: User
 }
 
+type Response{
+    success: Boolean!
+    message: String!
+}
+
 
 type Query {
     climbs: [Climbs]!
@@ -49,6 +54,8 @@ type Mutation{
     updateTrainingLog (_id: ID!, logName: String!, date: String!, notes: String!): TrainingLog
     updateUser(_id: ID!, username: String!, password:String!, email: String!): User
     login(email: String!, password:String!): Auth
+    resetPassword(_id: ID!, password:String!, email:String!): User
+    forgotPassword(email:String!): Response
 }
 
    

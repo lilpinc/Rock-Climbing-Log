@@ -1,7 +1,7 @@
 .login-main{
 text-align: center;
 background-color: #353636;
-border-top: hsla(89, 100%, 88%, 0.8) solid 2px;
+border-top: hsl(0, 0%, 39%) solid 2px;
 color: white;
 height: 100vh;
 }
@@ -37,3 +37,11 @@ height: 100vh;
     background: linear-gradient(50deg, hsl(0, 0%, 39%) 21%, #353636 21% 23%, hsl(0, 0%, 39%) 23% 26%, #353636 26% 95%,hsl(0, 0%, 39%) 95% 98%, #353636 98% 100%); 
     padding-bottom: 10%;
 }
+.back{
+    color: white;
+    text-decoration: none;
+    display: flex;
+    justify-content: left;
+    margin: 30px 0px;
+}
+
